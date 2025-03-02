@@ -7,7 +7,10 @@ import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <button
+      className="py-20"
+      onClick={() => (window.location.href = "/button")}
+    >
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
@@ -76,7 +79,7 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </button>
   );
 };
 
